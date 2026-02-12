@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analyst Portfolio | Aayush</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --background: #0f172a;
+      --primary: #38bdf8;
+      --highlight: #facc15;
+      --text: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #1e3a8a, #2563eb);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--highlight);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--highlight);
+    }
+
+    section {
+      padding: 6rem 2rem;
+      min-height: 100vh;
+    }
+
+    h2 {
+      color: var(--highlight);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: var(--highlight);
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-top: 10px;
+    }
+
+    .hero-text p {
+      margin-top: 1rem;
+      color: #e2e8f0;
+    }
+
+    .btns {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--highlight);
+      color: var(--background);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--highlight);
+      color: var(--highlight);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .profile-photo {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--highlight);
+    }
+
+    /* SKILLS */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 1.2rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 140px;
+      transition: 0.3s;
+    }
+
+    .skill i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill:hover {
+      background: var(--highlight);
+      color: var(--background);
+      transform: translateY(-5px);
+    }
+
+    /* PROJECTS */
+    .project {
+      margin-bottom: 2rem;
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    /* CONTACT */
+    .contact-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-box {
+      background: #1e293b;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .contact-box:hover {
+      background: var(--highlight);
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e293b;
+    }
+
+    @media(max-width:768px){
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-photo{
+        margin-top:20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo"> Data Analyst</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Ayush</h1>
+      <h2>Data Analyst</h2>
+      <p>
+        Passionate about transforming raw data into actionable insights using Excel, SQL, Power BI, and Python.
+      </p>
+      <div class="btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="AYUSH resume.pdf" class="btn btn-outline">Download CV</a>
+      </div>
+    </div>
+
+    <img src="image/ayush.png" alt="Profile Photo" class="profile-photo" />
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a BCA student with a strong interest in Data Analytics and Data Science.
+      I enjoy working with structured datasets, finding patterns, and building dashboards
+      that support data-driven decision-making.
+      <br><br>
+      I have hands-on experience in Excel (Pivot Tables, XLOOKUP), SQL, Power BI, and Python (Pandas, NumPy).
+      Currently, I am learning Machine Learning fundamentals and improving my analytical skills through practical projects.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><i class="fas fa-file-excel"></i><div>Advanced Excel</div></div>
+      <div class="skill"><i class="fas fa-database"></i><div>SQL</div></div>
+      <div class="skill"><i class="fas fa-chart-bar"></i><div>Power BI</div></div>
+      <div class="skill"><i class="fab fa-python"></i><div>Python</div></div>
+      <div class="skill"><i class="fas fa-chart-line"></i><div>Data Visualization</div></div>
+      <div class="skill"><i class="fab fa-github"></i><div>Git & GitHub</div></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Production Data Dashboard</h3>
+      <p>Built an interactive dashboard using Excel and Power BI to track production KPIs and defect rates.</p>
+    </div>
+
+    <div class="project">
+      <h3>Sales Data Analysis (SQL)</h3>
+      <p>Analyzed sales datasets using SQL queries such as joins, aggregations, and window functions to generate insights.</p>
+    </div>
+
+    <div class="project">
+      <h3>Data Cleaning with Python</h3>
+      <p>Used Pandas and NumPy to clean and transform raw datasets for reporting and visualization.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-boxes">
+      <a href="mailto:aayushdhiman9899@gmail.com" class="contact-box"><i class="fas fa-envelope"></i> Email</a>
+      <a href="tel:+918168207813" class="contact-box"><i class="fas fa-phone"></i> Phone</a>
+      <a href="https://github.com/Ayush002-dh" target="_blank" class="contact-box"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com" target="_blank" class="contact-box"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Aayush | Data Analyst Portfolio</p>
+  </footer>
+
+</body>
+</html>
